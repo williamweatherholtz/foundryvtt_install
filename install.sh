@@ -1,3 +1,5 @@
+# chmod +x install.sh
+
 sudo iptables -I INPUT 6 -m state --state NEW -p tcp --match multiport --dports 80,443,30000 -j ACCEPT
 sudo netfilter-persistent save
 
